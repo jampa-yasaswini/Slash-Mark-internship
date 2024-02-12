@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jampa Yasaswini - Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    @media screen and (max-width: 768px) {
+      .home-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .left-section {
+        margin-top: 0;
+        font-size: 1.8rem;
+        padding: 10px;
+      }
+
+      
+      .navbar {
+        padding: 15px;
+      }
+
+      .navbar-logo h1 {
+        font-size: 24px;
+      }
+
+      .navbar-menu {
+        flex-direction: column;
+      }
+
+      .navbar-item {
+        margin: 5px 0;
+      }
+
+      /* Adjust other sections as needed */
+    
+      /* Adjust other sections as needed */
+    }
+    /* Add your custom styling here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      font-family: 'poppins',sans-serif;
+    }
+    
+    
+    /* Define the colors you find pleasant */
+    :root {
+      --primary-color: #336699;
+      --secondary-color: #99ccff;
+      --text-color: #333333;
+      --link-color: white;
+    }
+    /* Header */
+header {
+  background-color:rgb(34, 34, 87);
+  padding: 45px;
+text-align:center;
+}
+.header h1 {
+  font-size: 24px;
+  color: var(--text-color);
+  margin: 0;
+  padding: 10px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-logo h1 {
+  font-size: 30px;
+  margin: 0;
+  color: var(--link-color);
+}
+
+.navbar-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-item {
+  margin: 0 10px;
+}
+
+.navbar-link {
+  color: whitesmoke;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-link:hover {
+  background-color: rgb(100, 130, 148);
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.navbar {
+  animation: fadeIn 1s ease-in-out;
+}
+
+
+
+    /* Add more styles for different sections and subsections */
+    /* Home Section */
+    /* Home Section */
+/* Home Section */
+#home {
+  display: flex;
+  justify-content: space-around;
+  margin: 80px;
+  align-items: center;
+}
+
+.home-container {
+  display: flex;
+}
+
+.left-section {
+  margin-top: 10%;
+  font-size: 2.8rem;
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+}
+.left-section .btn{
+            padding:12px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            
+            cursor: pointer;
+            font-size: 20px;
+}
+
+.left-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.left-section p {
+  font-size: 16px;
+}
+
+.right-section {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+    
+    /* About Section */
+    #about {
+      background-color: var(--secondary-color);
+      color: var(--text-color);
+      padding: 100px;
+    }
+    /* About Section */
+.about-section {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  padding: 80px;
+}
+
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-container h2 {
+  margin-top: 15px;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.about-container p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.cta-button {
+  margin-top: 30px;
+}
+
+.cta-button a {
+  text-decoration: none;
+  background-color: var(--primary-color);
+  color: var(--link-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button a:hover {
+  background-color: var(--link-color);
+  color: var(--primary-color);
+}
+
+    
+    /* Skills Section */
+#skills {
+  text-align: center;
+  padding-top: 50px;
+  padding-left: 100px;
+  padding-right: 10px;
+  padding-bottom: 50px;
+}
+
+#skills h2 {
+  margin-bottom: 50px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+}
+
+.grid-item {
+  width: 60%;
+  background-color: palevioletred;
+  padding: 20px;
+  
+  border-radius: 5px;
+}
+
+.grid-item h3 {
+  color: var(--text-color);
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.grid-item ul {
+  margin: 0;
+  padding:0;
+  list-style: none;
+}
+
+.grid-item li {
+  margin-bottom: 5px;
+  color: var(--text-color);
+}
+
+    
+    /* Projects Section */
+#projects {
+  background-color: pink;
+  color: var(--text-color);
+  padding: 80px;
+}
+
+.project-box {
+  background-color: white;
+  color: var(--text-color);
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fade-in 0.5s ease-out both;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+    
+    /* Contact Section */
+   /* Contact Section */
+#contact {
+  background-color: rgb(131, 131, 192) ;
+  color: var(--link-color);
+  padding: 100px;
+  text-align: center;
+}
+
+.contact-info {
+  margin-bottom: 30px;
+  animation: fade-in 0.5s ease-out both;
+}
+
+.contact-info p {
+  margin: 10px 0;
+}
+
+.social-media ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-media li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social-media a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--link-color);
+  text-decoration: none;
+  width: 100px;
+  height: 100px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.social-media a:hover {
+  background-color: var(--primary-color);
+}
+
+.social-media i {
+  font-size: 32px;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slideFromLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  </style>
+  <script>
+   
+    /* Add JavaScript functionality to move to each section */
+    function scrollToSection(sectionId) {
+      // Get all sections
+      const sections = document.querySelectorAll("section");
+
+      // Hide all sections
+      sections.forEach((section) => {
+        section.style.display = "none";
+      });
+
+      // Show the selected section by animating it from left to right
+      const selectedSection = document.getElementById(sectionId);
+      selectedSection.style.display = "block";
+      selectedSection.style.animation = "slideFromLeft 1s forwards";
+
+      // Scroll to the selected section
+      selectedSection.scrollIntoView({ behavior: "smooth" });
+    }
+
+    // Show the first section by default when the page loads
+    window.addEventListener("load", () => {
+      const sections = document.querySelectorAll("section");
+      sections[0].style.display = "block";
+    });
+    function downloadResume() {
+    // Replace 'https://example.com/path-to-your-resume.pdf' with the actual public URL of your resume file.
+    const resumeUrl = 'https://drive.google.com/file/d/10B4vNaZF3kaV03puhE1FnaEVs80HRUPV/view?usp=drive_link';
+    // Trigger the download by creating an anchor element and setting its href to the resume URL.
+    const downloadLink = document.createElement('a');
+    downloadLink.href = resumeUrl;
+    downloadLink.target = '_blank'; // Open the link in a new tab
+    downloadLink.download = 'Yasaswini_Resume.pdf'; // Change the download file name if needed
+
+    // Trigger the download
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+
+    // Clean up
+    document.body.removeChild(downloadLink);
+  }
+
+  </script>
+</head>
+<body>
+  <!-- Header -->
+  <!-- Header -->
+<header>
+  <nav class="navbar">
+    <div class="navbar-logo">
+      <h1>Yasaswini Jampa</h1>
+    </div>
+    <ul class="navbar-menu">
+      <li class="navbar-item"><a class="navbar-link" href="#home" style="font-size: 20px;">Home</a></li>
+      <li class="navbar-item"><a class="navbar-link" href="#about" style="font-size: 20px;">About</a></li>
+      <li class="navbar-item"><a class="navbar-link" href="#skills" style="font-size: 20px;">Skills</a></li>
+      <li class="navbar-item"><a class="navbar-link" href="#projects" style="font-size: 20px;">Projects</a></li>
+      <li class="navbar-item"><a class="navbar-link" href="#contact" style="font-size: 20px;">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+  <section id="home">
+  <div class="home-container">
+    <div class="left-section">
+      Hi, My name is 
+      <span class="me" style="color: rgb(146, 98, 192);">Yasaswini</span>
+      <div>and I am a passionate</div>
+      
+      <span id="element"></span>
+      <div class="buttons">
+          <button class="btn" onclick="downloadResume()">Download Resume</button>
+        </div>
+          
+    </div>
+    <div class="right-section">
+      <img src="choti.jpg" style="margin-top: 10%; margin-bottom: 10px;" width="600" height="600">
+    </div>
+  </div>
+</section>
+
+  <!-- About Section -->
+  <!-- About Me Section -->
+<!-- About Me Section -->
+<section id="about" class="about-section">
+  <div class="about-container">
+    <h2>About Me</h2>
+    <p>
+      Hello! I'm Jampa Yasaswini, a highly motivated and a passionate Software Engineer seeking to leverage my skills to contribute the goals of a company effiectively.  I thrive on turning ideas into reality through innovative and elegant solutions. 
+      <p>
+    <p>
+      As a Computer Science graduate, I have honed my skills in  C, Python and Front-End technologies like HTML, CSS. 
+      I believe in the power of teamwork and enjoy collaborating with diverse and talented individuals to create exceptional projects.
+    </p>
+    
+    
+    <div class="cta-button">
+      <a href="#contact">Get in Touch</a>
+    </div>
+  </div>
+</section>
+
+
+
+ <!-- Skills Section -->
+<section id="skills" style="background-color:beige">
+  <h2>Skills</h2>
+
+  <div class="grid-container">
+    <div class="grid-item">
+      <h3>Languages</h3>
+      <ul>
+    
+        <li>C</li>
+        <li>Python</li>
+      </ul>
+    </div>
+
+    <div class="grid-item">
+      <h3>Developer Tools</h3>
+      <ul>
+        <li>Figma</li>
+        <li>Android Studio</li>
+        <li>Sublime Text</li>
+        <li>Visual Studio Code</li>
+        <li>GitHub</li>
+      </ul>
+    </div>
+
+    <div class="grid-item">
+      <h3>Front End Technologies</h3>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+      </ul>
+    </div>
+
+    <div class="grid-item">
+      <h3>Databases</h3>
+      <ul>
+        <li>SQL</li>
+        
+      </ul>
+    </div>
+
+    <div class="grid-item">
+      <h3>Soft Skills</h3>
+      <ul>
+        <li>Adaptability</li>
+        <li>Proactive</li>
+        <li>Eloquence</li>
+        <li>Sincerity</li>
+        <li>Self Motivating</li>
+        <li>Teamwork</li>
+      </ul>
+    </div>
+
+    <div class="grid-item">
+      <h3>Areas of Interest</h3>
+      <ul>
+        <li>Full Stack Web Development</li>
+        <li>CyberSecurity</li>
+        <li>Data Analytics</li>
+        <li>Data Structures and Algorithms</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+  Projects Section 
+<section id="projects">
+  <h2 style="text-align: center;font-size: 32px;">Projects</h2>
+  <div class="project-box">
+    <h3>Building Detection by Effective Segmentation of Tree Canopy using U-Net Model</h3>
+   <p>It mainly focuses on detecting the objects that are occulated by trees</p>
+    <!--<p>Tools &amp; technologies used: Core Java</p>-->
+  </div>
+  <div class="project-box">
+    <h3>Object Classification by Effective Segmentation of Tree Canopy using U-Net Model</h3>
+    <p>It mainly focuses on classifying the objects that are detected. The Classification of objects is limited to buildings,roads and waterbodies</p>
+    
+  </div>
+   <!--<div class="project-box">
+    <h3>An Effective Deployment of Controllers in Software-Defined Networks</h3>
+    <p>With the deployment and applications of SDN, researchers have realized that controller placement directly affects network performance.</p>
+    <p>Tools &amp; technologies used: Google Colab, Python</p>
+  </div>
+  <div class="project-box">
+    <h3>To-Do List</h3>
+    <p>Developed a feature-rich, interactive to-do list application, allowing users to effortlessly add and delete tasks for improved productivity.</p>
+    <p>Tools &amp; technologies used: HTML, CSS, JavaScript, VS Code</p>
+  </div>
+  <div class="project-box">
+    <h3>Tic-Tac-Toe Solver Using React JS</h3>
+    <p>Created a tic-tac-toe solver using ReactJS.</p>
+    <p>Tools &amp; technologies used: ReactJS</p>
+  </div>*/-->
+</section>
+
+
+  <!-- Contact Section -->
+<!-- Contact Section -->
+<section id="contact">
+  <h2>Contact Me</h2>
+  <div class="contact-info">
+    <div>
+      <p><strong>Name:</strong>Jampa Yasaswini</p>
+    </div>
+    <div>
+      <p><strong>Email:</strong> <a href="mailto:yashuu0512@gmail.com">yashuu0512@gmail.com</a></p>
+    </div>
+    <div>
+      <p><strong>Phone:</strong> +91-9959232959</p>
+    </div>
+  </div>
+  <div class="social-media">
+    <h3>Connect with Me:</h3>
+    <ul>
+      <li>
+        <a href="https://www.linkedin.com/in/jampa-yasaswini-711a03215/">
+          <i class="fab fa-linkedin"></i>
+          LinkedIn
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+</section>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#element', {
+      strings: ['<i>Software Engineer'],
+      typeSpeed: 25,
+    });
+</script>
+
+
+</body>
+</html>
